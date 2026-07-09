@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rory Davis | Director of DeNovo Growth | Together Women's Health</title>
+<style>
+  :root{
+    --navy:#153450;
+    --navy-deep:#0F2740;
+    --navy-light:#1F4A73;
+    --teal:#2A9D8F;
+    --teal-light:#E4F3F1;
+    --rose:#C9527A;
+    --rose-light:#FBEAF0;
+    --bg:#F6F8FA;
+    --card:#FFFFFF;
+    --text:#1F2937;
+    --muted:#64748B;
+    --border:#E4E9EF;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.55;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+  /* HERO */
+  .hero{
+    background:linear-gradient(135deg,var(--navy-deep) 0%,var(--navy) 55%,var(--navy-light) 100%);
+    color:#fff;
+    padding:56px 0 44px;
+  }
+  .hero .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;}
+  .hero-left h1{margin:0 0 6px;font-size:2.3rem;letter-spacing:0.5px;font-weight:700;}
+  .hero-left .role{font-size:1.05rem;color:var(--teal-light);font-weight:500;margin-bottom:14px;}
+  .hero-left .target{font-size:0.92rem;color:#B9C7D6;}
+  .hero-left .target b{color:#fff;}
+  .hero-right{font-size:0.88rem;color:#CBD8E5;text-align:right;}
+  .hero-right div{margin-bottom:3px;}
+  .summary{
+    margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,255,255,0.15);
+    font-size:1.02rem;color:#DCE6F0;max-width:900px;
+  }
+
+  /* STATS */
+  .stats{
+    display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--border);
+    border-bottom:1px solid var(--border);
+  }
+  .stat{background:var(--card);padding:22px 14px;text-align:center;}
+  .stat .num{font-size:1.6rem;font-weight:700;color:var(--navy);}
+  .stat .label{font-size:0.78rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:0.4px;}
+
+  section{padding:40px 0;}
+  h2{font-size:1.35rem;color:var(--navy);margin:0 0 6px;}
+  .section-sub{color:var(--muted);font-size:0.92rem;margin-bottom:24px;}
+
+  /* DAY ONE ASSETS */
+  .assets{background:#fff;}
+  .asset-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .asset-card{
+    background:linear-gradient(180deg,#fff 0%,var(--teal-light) 130%);
+    border:1px solid var(--border);border-radius:12px;padding:22px 20px;
+    border-top:3px solid var(--teal);
+  }
+  .asset-card .icon{width:38px;height:38px;margin-bottom:12px;}
+  .asset-card .big{font-size:1.5rem;font-weight:700;color:var(--navy);}
+  .asset-card .title{font-weight:600;font-size:0.98rem;margin:2px 0 8px;color:var(--navy);}
+  .asset-card p{font-size:0.87rem;color:var(--muted);margin:0;}
+
+  /* PLAYBOOK */
+  .playbook{background:var(--bg);}
+  .playbook-card{
+    background:var(--navy-deep);border-radius:14px;padding:32px 26px;
+  }
+  .pb-grid{
+    display:grid;
+    grid-template-columns:1fr auto 1fr auto 1fr;
+    align-items:stretch;
+    gap:8px 10px;
+  }
+  .pb-pos-1{grid-column:1;grid-row:1;}
+  .pb-pos-plus1{grid-column:2;grid-row:1;}
+  .pb-pos-2{grid-column:3;grid-row:1;}
+  .pb-pos-plus2{grid-column:4;grid-row:1;}
+  .pb-pos-3{grid-column:5;grid-row:1;}
+  .pb-pos-connector-quick{grid-column:3/6;grid-row:2;}
+  .pb-pos-card4{grid-column:3/6;grid-row:3;}
+  .pb-pos-connector-full{grid-column:1/6;grid-row:4;}
+  .pb-pos-card5{grid-column:1/6;grid-row:5;}
+  .pb-card{
+    background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);
+    border-radius:12px;padding:16px 18px;
+  }
+  .pb-card.wide{
+    padding:10px 18px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .pb-card.wide .pb-card-head{margin-bottom:0;}
+  .pb-card.highlight{background:rgba(201,82,122,0.2);border-color:rgba(201,82,122,0.5);}
+  .pb-card.highlight .n{background:var(--rose);}
+  .pb-card-head{display:flex;align-items:center;gap:9px;font-size:0.94rem;font-weight:700;color:#fff;margin-bottom:9px;}
+  .pb-card-head .n{
+    background:var(--teal);color:#fff;width:24px;height:24px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:0.76rem;font-weight:700;flex-shrink:0;
+  }
+  .pb-examples-label{font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--teal-light);margin-bottom:5px;}
+  ul.pb-card-sub{font-size:0.78rem;color:#B9C7D6;line-height:1.7;margin:0;padding-left:16px;}
+  ul.pb-card-sub li{margin-bottom:2px;}
+  .pb-icon{width:24px;height:24px;flex-shrink:0;}
+  .pb-plus{align-self:center;justify-self:center;color:var(--teal-light);font-size:1.4rem;font-weight:700;}
+  .pb-connector{
+    text-align:center;color:var(--teal-light);font-size:1.3rem;line-height:1;
+  }
+  .pb-connector .cap{
+    display:block;font-size:0.62rem;color:#8FA6BC;text-transform:uppercase;
+    letter-spacing:0.4px;margin-top:3px;font-weight:600;
+  }
+  @media(max-width:640px){
+    .pb-grid{grid-template-columns:1fr;}
+    .pb-grid > *{grid-column:1;grid-row:auto;}
+  }
+
+  /* FIT TABLE */
+  .fit{background:#fff;}
+  .fit-table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid var(--border);}
+  .fit-table th{
+    background:var(--navy);color:#fff;text-align:left;padding:12px 16px;font-size:0.82rem;
+    text-transform:uppercase;letter-spacing:0.4px;font-weight:600;
+  }
+  .fit-table td{padding:14px 16px;font-size:0.9rem;border-top:1px solid var(--border);vertical-align:top;}
+  .fit-table td:first-child{color:var(--navy);font-weight:600;width:40%;}
+  .fit-table tr:nth-child(even) td{background:#FAFBFC;}
+
+  /* MAP */
+  .map-section{background:#fff;}
+  .map-card{
+    display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start;
+    background:var(--navy-deep);border-radius:14px;padding:24px;color:#fff;
+  }
+  .map-svg-wrap{flex:1 1 420px;min-width:320px;}
+  svg.usmap{width:100%;height:auto;display:block;}
+  .us-outline{fill:#1F4A73;stroke:#3A6690;stroke-width:0.4;}
+  .dot{fill:var(--rose);stroke:#fff;stroke-width:0.35;}
+  .dot-glow{fill:var(--rose);opacity:0.25;}
+  .legend{flex:1 1 320px;min-width:280px;}
+  .legend h3{margin:0 0 12px;font-size:0.95rem;color:var(--teal-light);text-transform:uppercase;letter-spacing:0.5px;}
+  .legend-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 20px;font-size:0.85rem;}
+  .legend-region{margin-bottom:14px;}
+  .legend-region .rname{font-weight:600;color:#fff;font-size:0.82rem;margin-bottom:4px;opacity:0.9;}
+  .legend-region ul{margin:0;padding-left:16px;color:#C9D6E4;font-size:0.83rem;}
+  .legend-region li{margin-bottom:2px;}
+  .map-note{font-size:0.78rem;color:#9DB0C4;margin-top:16px;}
+
+  /* EXPERIENCE */
+  .exp{background:var(--bg);}
+  .exp-item{
+    background:#fff;border:1px solid var(--border);border-radius:10px;
+    padding:18px 20px;margin-bottom:14px;
+  }
+  .exp-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:6px;}
+  .exp-role{font-weight:700;color:var(--navy);font-size:1rem;}
+  .exp-company{color:var(--teal);font-weight:600;}
+  .exp-dates{color:var(--muted);font-size:0.82rem;white-space:nowrap;}
+  .exp-desc{font-size:0.88rem;color:var(--text);}
+  .exp-desc ul{margin:8px 0 0;padding-left:18px;color:var(--muted);}
+  .exp-desc li{margin-bottom:4px;}
+  .tag{
+    display:inline-block;background:var(--rose-light);color:var(--rose);
+    font-size:0.72rem;font-weight:600;padding:2px 8px;border-radius:20px;margin-left:8px;
+  }
+
+  /* COMPETENCIES */
+  .comp{background:#fff;}
+  .chip-row{display:flex;flex-wrap:wrap;gap:10px;}
+  .chip{
+    background:var(--teal-light);color:var(--navy);border:1px solid #CDE7E3;
+    padding:8px 14px;border-radius:20px;font-size:0.85rem;font-weight:500;
+  }
+
+  /* EDU + FOOTER */
+  .edu{background:var(--bg);}
+  .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .edu-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px 18px;}
+  .edu-card .deg{font-weight:700;color:var(--navy);font-size:0.95rem;}
+  .edu-card .school{color:var(--muted);font-size:0.85rem;margin-top:2px;}
+
+  footer{
+    background:var(--navy-deep);color:#B9C7D6;padding:28px 0;text-align:center;font-size:0.85rem;
+  }
+  footer b{color:#fff;}
+
+  @media(max-width:760px){
+    .stats{grid-template-columns:repeat(2,1fr);}
+    .asset-grid{grid-template-columns:1fr;}
+    .edu-grid{grid-template-columns:1fr;}
+    .legend-grid{grid-template-columns:1fr;}
+    .hero-right{text-align:left;}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-left">
+      <h1>Rory Davis</h1>
+      <div class="role">Candidate for Director of DeNovo Growth</div>
+      <div class="target">Prepared for <b>Together Women's Health</b> · Grosse Pointe, MI</div>
+    </div>
+    <div class="hero-right">
+      <div>RoryDavis@gmail.com</div>
+      <div>925.451.6026</div>
+      <div>linkedin.com/in/rorydavis</div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="summary">
+      Real estate and construction executive with 20+ years scaling multi-site <b>healthcare</b>, retail, and specialty
+      brands from startup through rapid growth, equally fluent in market selection, lease strategy, design, and
+      construction operations, personally leading LOIs, lease negotiations, and job-site escalations while building
+      the data-driven systems, vendor networks, and internal teams required for enterprise-grade, repeatable development.
+    </div>
+  </div>
+</div>
+
+<div class="stats wrap" style="max-width:1080px;margin:0 auto;">
+  <div class="stat"><div class="num">20+</div><div class="label">Years in Real Estate, Design, &amp; Construction</div></div>
+  <div class="stat"><div class="num">200+</div><div class="label">Projects Delivered On Time/Budget</div></div>
+  <div class="stat"><div class="num">$120M+</div><div class="label">Construction Managed</div></div>
+  <div class="stat"><div class="num">50+</div><div class="label">Concurrent Markets Managed</div></div>
+  <div class="stat"><div class="num">21</div><div class="label">Submarkets w/ Direct Experience</div></div>
+</div>
+
+<section class="assets">
+  <div class="wrap">
+    <h2>What I Bring on Day One</h2>
+    <div class="section-sub">Proprietary systems built and refined across five healthcare development programs, ready to deploy immediately.</div>
+    <div class="asset-grid">
+      <div class="asset-card">
+        <svg class="icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="10" r="5" fill="#2A9D8F"/>
+          <circle cx="10" cy="34" r="5" fill="#2A9D8F"/>
+          <circle cx="38" cy="34" r="5" fill="#2A9D8F"/>
+          <path d="M24 15 L12 30 M24 15 L36 30 M14 34 H34" stroke="#2A9D8F" stroke-width="2"/>
+        </svg>
+        <div class="big">1,000+</div>
+        <div class="title">Nationwide Vendor List</div>
+        <p>Vetted architects, GCs, engineers, brokers, and FF&amp;E suppliers across every major market, cutting sourcing time from weeks to days on new site launches.</p>
+      </div>
+      <div class="asset-card">
+        <svg class="icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="6" width="28" height="36" rx="3" fill="#E4F3F1" stroke="#2A9D8F" stroke-width="2"/>
+          <line x1="16" y1="15" x2="32" y2="15" stroke="#2A9D8F" stroke-width="2"/>
+          <line x1="16" y1="22" x2="32" y2="22" stroke="#2A9D8F" stroke-width="2"/>
+          <line x1="16" y1="29" x2="26" y2="29" stroke="#2A9D8F" stroke-width="2"/>
+        </svg>
+        <div class="big">100+</div>
+        <div class="title">Lease Standards Playbook</div>
+        <p>A documented library of negotiated lease terms with sample language and fallback positions, accelerating negotiations and protecting clinical/operational requirements.</p>
+      </div>
+      <div class="asset-card">
+        <svg class="icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="6" y="8" width="16" height="14" rx="2" fill="#E4F3F1" stroke="#2A9D8F" stroke-width="2"/>
+          <rect x="26" y="8" width="16" height="14" rx="2" fill="#E4F3F1" stroke="#2A9D8F" stroke-width="2"/>
+          <rect x="6" y="26" width="16" height="14" rx="2" fill="#E4F3F1" stroke="#2A9D8F" stroke-width="2"/>
+          <rect x="26" y="26" width="16" height="14" rx="2" fill="#2A9D8F" stroke="#2A9D8F" stroke-width="2"/>
+        </svg>
+        <div class="big">200+</div>
+        <div class="title">Project Management Template Tasks</div>
+        <p>A tracked task framework spanning site selection through go-live: timelines, budgets, and milestones built to scale a repeatable de novo pipeline.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="playbook">
+  <div class="wrap">
+    <h2>A Tested Playbook Built to Repeat</h2>
+    <div class="section-sub">
+      I've worked directly with <b>more than 10 companies</b> to quickly define goals, understand resources, and
+      uncover constraints. I then bring repeatable results with the following process:
+    </div>
+    <div class="playbook-card">
+      <div class="pb-grid">
+        <div class="pb-card pb-pos-1">
+          <div class="pb-card-head"><span class="n">1</span>Define Goals</div>
+          <div class="pb-examples-label">Examples Include:</div>
+          <ul class="pb-card-sub">
+            <li>Scale of growth</li>
+            <li>Deep vs. wide market penetration</li>
+            <li>Demographic parameters</li>
+          </ul>
+        </div>
+        <div class="pb-plus pb-pos-plus1">+</div>
+        <div class="pb-card pb-pos-2">
+          <div class="pb-card-head"><span class="n">2</span>Understand Resources</div>
+          <div class="pb-examples-label">Examples Include:</div>
+          <ul class="pb-card-sub">
+            <li>Internal vs. external teams</li>
+            <li>Existing standards</li>
+            <li>Local market experts</li>
+          </ul>
+        </div>
+        <div class="pb-plus pb-pos-plus2">+</div>
+        <div class="pb-card pb-pos-3">
+          <div class="pb-card-head"><span class="n">3</span>Uncover Constraints</div>
+          <div class="pb-examples-label">Examples Include:</div>
+          <ul class="pb-card-sub">
+            <li>Leadership approval timeline</li>
+            <li>Budget allocation</li>
+            <li>Operations deployment cadence</li>
+          </ul>
+        </div>
+        <div class="pb-connector pb-pos-connector-quick">↓<span class="cap">2 + 3 lead here fast</span></div>
+        <div class="pb-card wide highlight pb-pos-card4">
+          <div class="pb-card-head"><span class="n">4</span>Remove Blockers to Unlock Quick Wins</div>
+          <svg class="pb-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9" stroke="#C9527A" stroke-width="2"/>
+            <path d="M12 7v5l3.5 2" stroke="#C9527A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="pb-connector pb-pos-connector-full">↓<span class="cap">1 + 2 + 3 build the foundation</span></div>
+        <div class="pb-card wide pb-pos-card5">
+          <div class="pb-card-head"><span class="n">5</span>Sustainable Long-Term Strategy</div>
+          <svg class="pb-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.45 1 1.15 1 1.9V16h5v-.2c0-.75.4-1.45 1-1.9A6 6 0 0 0 12 3z" stroke="#2A9D8F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fit">
+  <div class="wrap">
+    <h2>Alignment to the Role</h2>
+    <div class="section-sub">Mapping the Director of DeNovo Growth job requirements directly to hands-on experience.</div>
+    <table class="fit-table">
+      <tr><th>TWH Requirement</th><th>Rory's Experience</th></tr>
+      <tr><td>Real estate underwriting &amp; financial modeling</td><td>Built trade-area scorecards and cash flow models at Sollis Health; unit-economics and reimbursement modeling at Foresight Mental Health and Benchmark Advising clients</td></tr>
+      <tr><td>De novo build-out &amp; expansion PM (5–10+ yrs)</td><td>20+ years leading medical facility development; up to 25 units/year across 9 markets at One Medical; 50+ concurrent markets at Sollis Health</td></tr>
+      <tr><td>Design, construction &amp; vendor management</td><td>Built GC/architect/engineer vendor networks from scratch at Curo Pet Care and One Medical; $55M+ in construction delivered</td></tr>
+      <tr><td>Budgeting &amp; capital planning</td><td>Presented site strategy and capital plans to Boards and PE investors; owns budget/cost controls across every role since 2012</td></tr>
+      <tr><td>Lease negotiation &amp; real estate management</td><td>Personally negotiated all LOIs and leases across a 40+ office national portfolio at Foresight Mental Health; secured TI allowances, abatements, assignment rights</td></tr>
+      <tr><td>Permitting, utilities &amp; healthcare compliance</td><td>Managed entitlements, permitting, and accreditation-driven design standards across 9+ markets at One Medical and Sollis Health</td></tr>
+      <tr><td>IT, equipment &amp; procurement</td><td>Coordinated clinical technology infrastructure and FF&amp;E procurement aligned to go-live schedules across every platform</td></tr>
+      <tr><td>Facilities management</td><td>Built One Medical's first-ever construction &amp; facilities management department; repeated at Curo Pet Care and Foresight Mental Health</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="map-section">
+  <div class="wrap">
+    <h2>Nationwide Market Experience</h2>
+    <div class="section-sub">Submarkets with direct, hands-on project experience.</div>
+    <div class="map-card">
+      <div class="map-svg-wrap">
+        <svg class="usmap" viewBox="0 0 100 70" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="us-outline" points="0.0,4.0 1.0,10.0 1.2,15.3 0.5,24.5 0.9,29.7 0.9,34.5 1.6,41.8 3.8,49.8 6.8,57.8 8.7,61.9 13.0,67.1 17.1,67.9 27.2,70.7 31.5,70.7 41.0,81.9 47.1,94.0 51.7,80.7 60.2,77.9 64.9,76.3 68.7,79.1 72.8,86.4 76.8,94.8 77.3,91.2 76.3,83.9 74.9,76.7 75.8,69.9 79.2,63.1 83.2,59.0 84.3,50.2 85.8,44.6 87.4,39.8 87.9,35.3 91.4,32.5 94.6,31.3 94.8,22.9 100.0,18.5 94.6,17.7 86.5,17.7 79.1,21.7 73.2,23.7 69.6,11.7 60.9,5.6 51.0,1.6 35.8,1.6 15.1,1.6 2.9,1.6"
+            transform="scale(1,0.7)"/>
+          <!-- City dots (viewBox 0-100 x, 0-70 y = x%, y%*0.7) -->
+          <!-- helper: cx = x%, cy = y%*0.7 -->
+          <g>
+            <circle class="dot" cx="3.95" cy="32.7" r="1.0"><title>San Francisco</title></circle>
+            <circle class="dot" cx="3.75" cy="32.1" r="1.0"><title>Marin / North Bay</title></circle>
+            <circle class="dot" cx="4.86" cy="33.9" r="1.0"><title>San Jose / South Bay</title></circle>
+            <circle class="dot" cx="4.20" cy="32.6" r="1.0"><title>Oakland / Walnut Creek / East Bay</title></circle>
+            <circle class="dot" cx="4.43" cy="33.6" r="1.0"><title>Palo Alto / Peninsula</title></circle>
+            <circle class="dot" cx="11.18" cy="43.2" r="1.0"><title>Greater Los Angeles</title></circle>
+            <circle class="dot" cx="13.04" cy="46.9" r="1.0"><title>Greater San Diego</title></circle>
+            <circle class="dot" cx="4.10" cy="5.0" r="1.0"><title>Seattle</title></circle>
+            <circle class="dot" cx="4.33" cy="5.0" r="1.0"><title>Bellevue</title></circle>
+            <circle class="dot" cx="3.49" cy="10.9" r="1.0"><title>Portland</title></circle>
+            <circle class="dot" cx="34.10" cy="27.2" r="1.0"><title>Denver</title></circle>
+            <circle class="dot" cx="21.85" cy="44.8" r="1.0"><title>Phoenix</title></circle>
+            <circle class="dot" cx="22.33" cy="45.1" r="1.0"><title>Gilbert</title></circle>
+            <circle class="dot" cx="48.27" cy="46.7" r="1.0"><title>Dallas</title></circle>
+            <circle class="dot" cx="64.13" cy="21.1" r="1.0"><title>Greater Chicago</title></circle>
+            <circle class="dot" cx="87.77" cy="24.2" r="1.0"><title>Manhattan</title></circle>
+            <circle class="dot" cx="88.41" cy="24.5" r="1.0"><title>Long Island</title></circle>
+            <circle class="dot" cx="92.80" cy="19.8" r="1.0"><title>Boston</title></circle>
+            <circle class="dot" cx="82.46" cy="29.5" r="1.0"><title>Washington, D.C.</title></circle>
+            <circle class="dot" cx="82.15" cy="29.5" r="1.0"><title>Tysons Corner</title></circle>
+            <circle class="dot" cx="77.01" cy="66.5" r="1.0"><title>Miami</title></circle>
+          </g>
+        </svg>
+      </div>
+      <div class="legend">
+        <h3>21 Submarkets</h3>
+        <div class="legend-grid">
+          <div class="legend-region">
+            <div class="rname">Northern California</div>
+            <ul>
+              <li>San Francisco</li>
+              <li>Marin / North Bay</li>
+              <li>San Jose / South Bay</li>
+              <li>Oakland / Walnut Creek / East Bay</li>
+              <li>Palo Alto / Peninsula</li>
+            </ul>
+          </div>
+          <div class="legend-region">
+            <div class="rname">Southern California</div>
+            <ul>
+              <li>Greater Los Angeles</li>
+              <li>Greater San Diego</li>
+            </ul>
+          </div>
+          <div class="legend-region">
+            <div class="rname">Pacific Northwest</div>
+            <ul>
+              <li>Seattle</li>
+              <li>Bellevue</li>
+              <li>Portland</li>
+            </ul>
+          </div>
+          <div class="legend-region">
+            <div class="rname">Mountain &amp; Southwest</div>
+            <ul>
+              <li>Denver</li>
+              <li>Phoenix</li>
+              <li>Gilbert</li>
+            </ul>
+          </div>
+          <div class="legend-region">
+            <div class="rname">Texas &amp; Midwest</div>
+            <ul>
+              <li>Dallas</li>
+              <li>Greater Chicago</li>
+            </ul>
+          </div>
+          <div class="legend-region">
+            <div class="rname">Northeast</div>
+            <ul>
+              <li>Manhattan</li>
+              <li>Long Island</li>
+              <li>Boston</li>
+              <li>Washington, D.C.</li>
+              <li>Tysons Corner</li>
+            </ul>
+          </div>
+          <div class="legend-region">
+            <div class="rname">Southeast</div>
+            <ul>
+              <li>Miami</li>
+            </ul>
+          </div>
+        </div>
+        <div class="map-note">Map is illustrative, not to exact geographic scale.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="exp">
+  <div class="wrap">
+    <h2>Relevant Experience</h2>
+    <div class="section-sub">Healthcare and multi-site development roles most relevant to TWH.</div>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <div><span class="exp-role">Senior Director, Real Estate &amp; Construction</span> at <span class="exp-company">Sollis Health</span> <span class="tag">Healthcare</span></div>
+        <div class="exp-dates">Oct 2024 – Present</div>
+      </div>
+      <div class="exp-desc">
+        Owns all real estate and construction strategy for a PE-backed concierge urgent care platform; manages a pipeline of 50+ concurrent markets.
+        <ul>
+          <li>Data-driven market selection via CoStar, ESRI, and census data to build trade-area scorecards weighting demographics, co-tenancy, and referral proximity</li>
+          <li>Negotiates all LOIs and leases directly; secures TI allowances, abatements, and use protections</li>
+          <li>Oversees clinically complex medical buildout construction and vendor management</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <div><span class="exp-role">Senior Director of Real Estate</span> at <span class="exp-company">Curo Pet Care</span> <span class="tag">Healthcare</span></div>
+        <div class="exp-dates">Jun 2023 – Mar 2024</div>
+      </div>
+      <div class="exp-desc">
+        Built all real estate and construction processes, standards, and systems from scratch for a PE-backed veterinary platform; managed 20+ concurrent projects.
+        <ul>
+          <li>Developed construction/design standards for consistent, scalable buildouts</li>
+          <li>Led GC search and qualification across west coast markets; built bidding and evaluation frameworks</li>
+          <li>Established architect, engineer, and vendor networks for accountability at scale</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <div><span class="exp-role">Director of Real Estate</span> at <span class="exp-company">Foresight Mental Health</span> <span class="tag">Healthcare</span></div>
+        <div class="exp-dates">Mar 2021 – Mar 2023</div>
+      </div>
+      <div class="exp-desc">
+        Built the real estate function from the ground up; signed 20 leases in 12 months with 30 more in progress across a national portfolio.
+        <ul>
+          <li>Personally negotiated all leases across 40+ offices, securing TI allowances, abatements, and assignment rights</li>
+          <li>Managed nationwide broker relationships; onboarded lease administration platform</li>
+          <li>Led a team of four across leasing, construction, facilities, and operations</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <div><span class="exp-role">Director, Construction &amp; Development</span> at <span class="exp-company">One Medical</span> <span class="tag">Healthcare</span></div>
+        <div class="exp-dates">Sep 2012 – Jan 2019</div>
+      </div>
+      <div class="exp-desc">
+        Directed development of up to 25 new units/year across nine markets; built the organization's first construction and facilities management departments.
+        <ul>
+          <li>Completed 60+ offices totaling $55M+ in construction</li>
+          <li>Managed design standards, due diligence, entitlements, permitting, and delivery across dispersed markets</li>
+          <li>Delivered client campus buildouts for Google and SpaceX alongside high-street retail locations</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <div><span class="exp-role">Fractional Consultant</span> at <span class="exp-company">Benchmark Advising</span> <span class="tag">Healthcare</span></div>
+        <div class="exp-dates">Oct 2019 – Mar 2021 &amp; Mar 2024 – Oct 2024</div>
+      </div>
+      <div class="exp-desc">
+        Founded a boutique real estate, design, and construction consulting practice serving healthcare and specialty care startups, including Brightline, Uniform Teeth, and Quilted Health.
+        <ul>
+          <li>End-to-end project leadership: site selection, lease negotiation, design, permitting, construction</li>
+          <li>Built data-driven market scorecards incorporating reimbursement rates and unit economics</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="comp">
+  <div class="wrap">
+    <h2>Core Competencies</h2>
+    <div class="chip-row">
+      <span class="chip">Multi-Site Real Estate Strategy</span>
+      <span class="chip">Construction &amp; Development Oversight</span>
+      <span class="chip">Lease Negotiation &amp; Deal Execution</span>
+      <span class="chip">Predictive Analytics &amp; Market Selection</span>
+      <span class="chip">Capital Planning &amp; Budget Control</span>
+      <span class="chip">Team &amp; Vendor Management</span>
+      <span class="chip">CoStar · ESRI · Buxton</span>
+      <span class="chip">Process Design &amp; Scalable Systems</span>
+      <span class="chip">Board &amp; Executive Presentations</span>
+    </div>
+  </div>
+</section>
+
+<section class="edu">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="deg">Master of Business Administration</div>
+        <div class="school">Wayne State College (completed in two years while working full-time)</div>
+      </div>
+      <div class="edu-card">
+        <div class="deg">B.S., General Engineering</div>
+        <div class="school">California Polytechnic State University, San Luis Obispo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Prepared by <b>Rory Davis</b> for the Director of DeNovo Growth interview at <b>Together Women's Health</b>
+    &nbsp;·&nbsp; RoryDavis@gmail.com &nbsp;·&nbsp; 925.451.6026
+  </div>
+</footer>
+
+</body>
+</html>
